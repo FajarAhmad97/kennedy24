@@ -13,10 +13,11 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16" />
     <meta name="next-size-adjust" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="__className_aaf875">
-    <div>
+    <div class="w-full">
         <header class="py-8  sm:py-4" style="background: linear-gradient(180deg, rgba(6,6,34,1) 25%, rgba(14,14,66,1) 50%, rgba(6,6,34,1) 100%);">
             <div class="container flex items-center justify-between"><a href="index.html"><img alt="Logo" loading="lazy"
                         width="236" height="47" decoding="async" data-nimg="1" class="sm:h-8 sm:w-40"
@@ -38,22 +39,33 @@
                 </div>
             </div>
         </header>
-        <div>
-            <section class="relative grid grid-cols-2 sm:grid-cols-1">
-                <img alt="Hero" loading="lazy" width="592"
-                    height="632" decoding="async" data-nimg="1" class="w-full" style="color:transparent; background-color: #060622;"
-                    srcSet="images/main-hero.png"
-                    src="images/main-hero.png" />
-                <div class="flex items-center justify-left  p-12 sm:justify-end sm:p-6 " style="color:transparent; background-color: #060622;">
-                    <div class="flex flex-col items-center gap-6"><img alt="Declare Logo" loading="lazy" width="528"
-                            height="158" decoding="async" data-nimg="1" style="color:transparent"
-                            srcSet="images/hero-logo.png"
-                            src="images/hero-logo.png" />
-                        <p class="mx-auto max-w-[413px] text-center text-[17.6px] font-medium text-primary">As
-                            president, I will end the forever wars, clean up government, increase wealth for all, and
-                            tell Americans the truth.</p>
+        <div >
+            <section class="relative hero_section ">
+                <div class="container">
+                    <div class=" hero_content">
+                        <div class="img_wrap">
+                            <img alt="Hero" loading="lazy" width="503"
+                            height="514" decoding="async" data-nimg="1" class="" 
+                            srcSet="images/hero-img.png"
+                            src="images/hero-img.png" />
+                        </div>
+                       
+                        <div class=" hero_right_side flex items-end justify-center  p-12 sm:justify-end sm:p-6 " style="color:transparent; background-color: #060622;">
+                            <div class="logo_right">
+                                <div class="img_wrap"></div>
+                                <img alt="Declare Logo" loading="lazy" width="528"
+                                    height="158" decoding="async" data-nimg="1" style="color:transparent"
+                                    srcSet="images/hero-logo.png"
+                                    src="images/hero-logo.png" />
+                                <p class="">As
+                                    president, I will end the forever wars, clean up government, increase wealth for all, and
+                                    tell Americans the truth.</p>
+                            </div>
+                        </div>
                     </div>
+                   
                 </div>
+              
             </section>
             <section class="" style="background: #060622;">
                 <div class="container space-y-14 py-14 sm:py-20">
@@ -79,39 +91,39 @@
                                         champion RFK Jr&#x27;s vision through the revolutionary medium of blockchain
                                         technology.</p>
                                     <div class="mt-auto space-y-4 flex gap-6">
-                                        <div class="flex items-end "><a class="btn-primary whitespace-nowrap rounded-md" style="background: #AEAEB6; color: #060622;"
+                                        <div class="flex items-end "><a class="btn-primary whitespace-nowrap rounded-md" style="background: #AEAEB6; color: #060622; border-color:#AEAEB6 ;"
                                                 href="collections.html">Explore Collection</a></div>
                                                 <div class="flex items-end "><a class="btn-primary btn-primary-outlined whitespace-nowrap rounded-md" style="color: #fff; border-color:#3843AF ;"
                                                     href="collections.html"><i class="fas fa-share-alt mr-2"></i> Share</a></div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div
-                                class="grid w-full max-w-72 flex-shrink-0 gap-6 border-[3px] border-gray-500 p-8 lg:max-w-none lg:grid-cols-2 md:px-4 md:gap-4">
-                                <div class="flex items-center gap-2 lg:col-span-2">
+                            <div
+                                class="grid w-full max-w-72 flex-shrink-0 gap-6  border-gray-500 p-8 lg:max-w-none lg:grid-cols-2 md:px-4 md:gap-4" style="background: #060622;">
+                                <div class="flex items-center gap-2 lg:col-span-2" style="background: linear-gradient(270deg, rgba(24,24,136,1) 30%, rgba(6,6,34,1) 80%);">
                                     <div class="h-12 w-12 rounded-[10px] border border-gray-500"></div>
-                                    <p class="text-[1.1rem] font-semibold text-primary">Brand</p>
+                                    <p class="text-[1.1rem] font-semibold text-white">Brand</p>
                                 </div>
-                                <div>
+                                <div  style="background: linear-gradient(270deg, rgba(24,24,136,1) 30%, rgba(6,6,34,1) 80%);">
                                     <p class="attr-title">Total amount of donations</p>
                                     <p class="attr-description">2234</p>
                                 </div>
-                                <div>
+                                <div  style="background: linear-gradient(270deg, rgba(24,24,136,1) 30%, rgba(6,6,34,1) 80%);">
                                     <p class="attr-title">Total donors</p>
                                     <p class="attr-description">1241</p>
                                 </div>
-                                <div>
+                                <div  style="background: linear-gradient(270deg, rgba(24,24,136,1) 30%, rgba(6,6,34,1) 80%);">
                                     <p class="attr-title">Highest donation</p>
                                     <p class="attr-description">$1320</p>
                                 </div>
-                                <div>
+                                <div  style="background: linear-gradient(270deg, rgba(24,24,136,1) 30%, rgba(6,6,34,1) 80%);">
                                     <p class="attr-title">Latest donation</p>
                                     <div class="flex items-baseline gap-2">
                                         <p class="attr-description">Jan 31</p>
-                                        <p class="text-sm font-light text-[#666]">11:30 AM EST</p>
+                                        <p class="text-sm font-light text-white">11:30 AM EST</p>
                                     </div>
                                 </div>
-                            </div> -->
+                            </div>
                         </div>
                         <div class="relative flex gap-12 bg-gray-400 p-10 lg:flex-col md:px-4 md:-mx-4">
                             <div class="absolute inset-0 overflow-hidden " style="background: rgba(0,0,0,0.6);">
@@ -431,7 +443,7 @@
                                 </div>
                             </div>
                             <div
-                                class="grid w-full max-w-72 flex-shrink-0 gap-6 border-[3px] border-gray-500 p-8 lg:max-w-none lg:grid-cols-2 md:px-4 md:gap-4">
+                                class="grid w-full max-w-72 flex-shrink-0 gap-6  border-gray-500 p-8 lg:max-w-none lg:grid-cols-2 md:px-4 md:gap-4" style="background:  #060606;">
                                 <div class="flex items-center gap-2 lg:col-span-2">
                                     <div class="h-12 w-12 rounded-[10px] border border-gray-500"></div>
                                     <p class="text-[1.1rem] font-semibold text-primary">Brand</p>
@@ -493,6 +505,38 @@
                 </div>
             </div>
             </section>
+
+            <section class="kennedy_section">
+                <div class="container">
+                    <div class="kennedy-heading">
+                        Kennedy </br> 2024 NFTs
+                    </div>
+                    <div class="col-wrap">
+                        <div class=" col-left">
+                            <div class="text_wrap">
+                                Political Digital Collectibles
+                                <p>In the landscape of political campaigns, a revolutionary change is on the horizon. Kennedy 2024 NFTs invite you to be part of a groundbreaking moment, combining innovation, artistry, and the spirit of  progress that defines RFK Jr.'s vision for America.</p>
+                            </div>
+                            <div class="img_wrap">
+                                <img src="/images/flag.png" width="652" height="502" alt="">
+                            </div>
+                        </div>
+                        <div class=" col-left">
+                            <div class="text_wrap">
+                                Political Digital Collectibles
+                                <p>In the landscape of political campaigns, a revolutionary change is on the horizon. Kennedy 2024 NFTs invite you to be part of a groundbreaking moment, combining innovation, artistry, and the spirit of  progress that defines RFK Jr.'s vision for America.</p>
+                            </div>
+                            <div class="img_wrap">
+                                <img src="/images/flag.png" width="652" height="502" alt="">
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+              
+            </section>
+
+
             <div class="mx-auto flex w-full justify-center items-center gap-[18px]  md:pb-8" style="background: #060622; padding-top: 80px; padding-bottom: 50px;">
                 <p class="text-[22px] font-light " style="color: #fff;">Powered by</p>
                 <div class="flex items-center gap-1.5"><img alt="M4Logo" loading="lazy" width="50" height="50"

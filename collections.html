@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="_next/static/css/3698d9b2a429bd97.css" data-precedence="next" />
     <link rel="preload" as="script" fetchPriority="low" href="_next/static/chunks/webpack-a28c54cd1cab965f.js" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <!-- <script src="_next/static/chunks/fd9d1056-817b599ab145302e.js" async=""></script>
     <script src="_next/static/chunks/472-22d7ec85fb2c7707.js" async=""></script>
     <script src="_next/static/chunks/main-app-892c3dff08e9cd4c.js" async=""></script>
@@ -35,25 +36,28 @@
     <script src="_next/static/chunks/polyfills-c67a75d1b6f99dc8.js" noModule=""></script>
 </head>
 
-<body class="__className_aaf875" style="background: #060622;" >
+<body class="__className_aaf875" style="background: #060622;">
     <div>
-        <header class="py-8  sm:py-4" style="background: linear-gradient(180deg, rgba(6,6,34,1) 25%, rgba(14,14,66,1) 50%, rgba(6,6,34,1) 100%);">
+        <header class="py-8  sm:py-4"
+            style="background: linear-gradient(180deg, rgba(6,6,34,1) 25%, rgba(14,14,66,1) 50%, rgba(6,6,34,1) 100%);">
             <div class="container flex items-center justify-between"><a href="index.html"><img alt="Logo" loading="lazy"
                         width="236" height="47" decoding="async" data-nimg="1" class="sm:h-8 sm:w-40"
-                        style="color:transparent"
-                        srcSet="images/logo.png"
-                        src="images/logo.png" /></a>
+                        style="color:transparent" srcSet="images/logo.png" src="images/logo.png" /></a>
                 <div class="flex items-center gap-[18px] sm:flex-col-reverse sm:gap-2">
                     <p class="text-red sm:text-[10px]">Follow KENNEDY24</p>
                     <ul class="flex gap-2 sm:gap-1.5">
                         <li><a class="flex h-10 w-10 items-center justify-center rounded-full bg-primary sm:h-[26px] sm:w-[26px]"
-                                target="_blank" href="https://instagram.com/"><span><i class="text-white fab fa-instagram"></i> </span></a></li>
+                                target="_blank" href="https://instagram.com/"><span><i
+                                        class="text-white fab fa-instagram"></i> </span></a></li>
                         <li><a class="flex h-10 w-10 items-center justify-center rounded-full bg-primary sm:h-[26px] sm:w-[26px]"
-                                target="_blank" href="https://facebook.com/"><span><i class="text-white fab fa-facebook-f"></i></span></a></li>
+                                target="_blank" href="https://facebook.com/"><span><i
+                                        class="text-white fab fa-facebook-f"></i></span></a></li>
                         <li><a class="flex h-10 w-10 items-center justify-center rounded-full bg-primary sm:h-[26px] sm:w-[26px]"
-                                target="_blank" href="https://tiktok.com/"><span><i class="text-white fab fa-tiktok"></i></span></a></li>
+                                target="_blank" href="https://tiktok.com/"><span><i
+                                        class="text-white fab fa-tiktok"></i></span></a></li>
                         <li><a class="flex h-10 w-10 items-center justify-center rounded-full bg-primary sm:h-[26px] sm:w-[26px]"
-                                target="_blank" href="https://youtube.com/"><i class="text-white fab fa-youtube"></i></a></li>
+                                target="_blank" href="https://youtube.com/"><i
+                                    class="text-white fab fa-youtube"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -62,13 +66,14 @@
 
         </section>
         <div class="container">
-            <div class="grid grid-cols-2 gap-20 md:grid-cols-1 md:gap-8 mt-8 md:mt-16"><img alt="collection"
-                    loading="lazy" width="1094" height="1086" decoding="async" data-nimg="1"
+            <div class="flex  collection_section ">
+                <div class="img_wrap">
+                    <img alt="collection" loading="lazy" width="1094" height="1086" decoding="async" data-nimg="1"
                     class="mx-auto w-full max-w-[440px] aspect-[0.8] flex-shrink-0 object-cover"
-                    style="color:transparent"
-                    srcSet="images/main-product.png"
-                    src="images/main-product.png" />
-                <div>
+                    style="color:transparent" srcSet="images/main-product.png" src="images/main-product.png" />
+                </div>
+             
+                <div class="collection_right">
                     <div>
                         <h2 class="text-white">Kennedy 2024 Genesis Collection</h2>
                         <h4 class="text-white">Own a Piece of History</h4>
@@ -79,8 +84,16 @@
                             revolutionary medium of blockchain technology.<br /><span
                                 class="cursor-pointer font-medium">Read more</span></p>
                     </div>
-                    <div class="mt-8 flex flex-wrap items-center gap-x-10 gap-y-4"><button
-                            class="btn-primary w-full max-w-[300px]">Buy</button></div>
+                    <div class="mt-8 flex flex-wrap items-center gap-x-10 gap-y-4">
+                        <div class="quantity">
+                            <button class="minus" aria-label="Decrease">&minus;</button>
+                            <!-- <input type="number" class="input-box" value="1" min="1" max="10"> -->
+                            <span class="input-box"> 1 </span>
+                            <button class="plus" aria-label="Increase">&plus;</button>
+                        </div>
+                        <button class="px-3 py-3 h-12 max-w-[300px] w-full"
+                            style="border-radius: 10px; background: #AEAEB6; color: #060622;">Buy</button>
+                    </div>
                     <div class="mt-8 md:mt-6">
                         <h4 class="text-white">Choose your price</h4>
                         <div class="relative mt-12">
@@ -97,49 +110,81 @@
                                     aria-disabled="false" aria-orientation="horizontal"></div>
                             </div>
                             <div class="mt-2 flex justify-between">
-                                <p class="text-sm font-light text-[#666666]">1$</p>
-                                <p class="text-sm font-light text-[#666666]">1000$</p>
+                                <p class="text-sm font-light" style="color: #E5E5E5;">1$</p>
+                                <p class="text-sm font-light" style="color: #E5E5E5;">1000$</p>
                             </div>
                         </div>
                     </div>
                     <div class="mt-16 grid grid-cols-2 gap-5 md:mt-12">
                         <div>
-                            <p class="text-sm font-light text-[#666] md:text-xs">Total amount of donations</p>
+                            <p class="text-sm font-light  md:text-xs " style="color: #E5E5E5;">Total amount of donations
+                            </p>
                             <p class="text-[27px] font-semibold !leading-[1.6] text-white md:text-xl">2234</p>
                         </div>
                         <div>
-                            <p class="text-sm font-light text-[#666] md:text-xs">Highest donation</p>
+                            <p class="text-sm font-light  md:text-xs " style="color: #E5E5E5;">Highest donation</p>
                             <p class="text-[27px] font-semibold !leading-[1.6] text-white md:text-xl">$1320</p>
                         </div>
                         <div>
-                            <p class="text-sm font-light text-[#666] md:text-xs">Total donors</p>
+                            <p class="text-sm font-light  md:text-xs " style="color: #E5E5E5;">Total donors</p>
                             <p class="text-[27px] font-semibold !leading-[1.6] text-white md:text-xl">1241</p>
                         </div>
                         <div>
-                            <p class="text-sm font-light text-[#666] md:text-xs">Latest donation</p>
+                            <p class="text-sm font-light  md:text-xs " style="color: #E5E5E5;">Latest donation</p>
                             <div class="flex items-baseline gap-2">
                                 <p class="text-[27px] font-semibold !leading-[1.6] text-white md:text-xl">Jan 31</p>
-                                <p class="text-sm font-light text-[#666]">11:30 AM EST</p>
+                                <p class="text-sm font-light " style="color: #E5E5E5;">11:30 AM EST</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="mt-36 grid grid-cols-2 gap-20 md:mt-20 md:grid-cols-1 md:gap-12">
-                <div class="flex flex-col gap-12 md:flex-col-reverse">
-                    <div class="space-y-8">
-                        <h3 class="text-white">Exclusive Community Access</h3>
-                        <p class="text-xl font-light !leading-[1.6] text-white md:text-lg">Beyond owning a digital
-                            masterpiece, you will gain entry into an exclusive virtual community of like-minded donors.
-                            This space will be a hub for interaction, engagement, and collaboration, offering unique
-                            opportunities to connect with other supporters and stay informed about campaign milestones.
-                        </p>
-                    </div><img alt="collection" loading="lazy" width="1054" height="1056" decoding="async" data-nimg="1"
-                        class="h-96 object-contain w-full" style="color:transparent"
-                        srcSet="images/with-dog.png"
-                        src="images/with-dog.png" />
+        </div>
+        <div class="mt-36 flex flex-wrap gap-40 md:mt-20  md:gap-20">
+            <div class="section-bg">
+                <div class="container">
+                    <div class="community_section  ">
+                        <div class="text_wrapper">
+                            <div class="text_align">
+                                <h3 class="">Exclusive Community Access</h3>
+                                <p class="">Beyond owning a digital
+                                    masterpiece, you will gain entry into an exclusive virtual community of like-minded
+                                    donors.
+                                    This space will be a hub for interaction, engagement, and collaboration, offering unique
+                                    opportunities to connect with other supporters and stay informed about campaign
+                                    milestones.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- style="background-image: url('images/ExquisiteCraftsmanship.png');" -->
+                        <div class="h-96  img_wrap" >
+                            <img src="/images/ExquisiteCraftsmanship.png" width="1054" height="1056" alt="">
+                        </div>
+                    </div>
                 </div>
-                <div class="flex flex-col justify-between md:space-y-12"><img alt="collection" loading="lazy"
+            </div>
+        
+            <div class="section-bg">
+                <div class="container">
+                    <div class="community_section flex_row_reverse ">
+                        <div class="text_wrapper">
+                            <div class="text_align">
+                                <h3 class="">Exclusive Community Access</h3>
+                                <p class="">Only 2,024 NFTs will ever be minted, ensuring each piece remains a rare and valuable collectible. Each NFT is uniquely designed with different poses, clothing, and settings, making every piece a one-of-a-kind artwork.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- style="background-image: url('images/with-dog.png');" -->
+                        <div class="h-96  img_wrap" >
+                            <img src="images/with-dog.png" width="1054" height="1056" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+       
+            <!-- <div class="flex flex justify-between md:space-y-12"><img alt="collection" loading="lazy"
                         width="1050" height="1076" decoding="async" data-nimg="1" class="h-96 object-contain w-full"
                         style="color:transparent"
                         srcSet="images/peace.png"
@@ -149,17 +194,21 @@
                         minted, ensuring each piece remains a rare and valuable collectible. Each NFT is uniquely
                         designed with different poses, clothing, and settings, making every piece a one-of-a-kind
                         artwork.</p>
-                </div>
-            </div>
+                </div> -->
+        </div>
+        <div class="container">
+
             <div class="mt-12 space-y-10 md:mt-16">
                 <h3 class="text-white">Other Collections</h3>
-                <div class="space-y-8">
+                <div class="">
                     <div class="grid grid-cols-3 gap-6 md:grid-cols-2 sm:grid-cols-1">
-                        <div class="bg-[#FFFFFF01] shadow-[0px_4px_60px_#00000014]">
-                            <div class="bg-primary" style="aspect-ratio:0.8; overflow: hidden;" >
-                                <img src="images/collection-1.png" width="424" height="557" class="w-full" alt="">
+                        <div class=" p-12 py-6 shadow-[0px_4px_60px_#00000014]"
+                            style="background: linear-gradient(0deg, rgba(16,16,16,1) 14%, rgba(67,67,67,0.6) 50%, rgba(16,16,16,1) 70%);">
+                            <div class=" " style="aspect-ratio:0.8; overflow: hidden; ">
+                                <img src="images/collection-1.png" style="border-radius: 12px; overflow: hidden;"
+                                    width="424" height="557" class="w-full" alt="">
                             </div>
-                            <div class="space-y-3 px-8 py-6 md:px-4">
+                            <div class="space-y-3  py-6 md:px-4">
                                 <div class="space-y-1 text-white">
                                     <p class="text-base font-light text-white">Text</p>
                                     <p class="text-xl font-semibold leading-[1.6] ">Name</p>
@@ -173,11 +222,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-[#FFFFFF01] shadow-[0px_4px_60px_#00000014]">
-                            <div class="bg-primary" style="aspect-ratio:0.8; overflow: hidden;">
-                                <img src="images/collection-1.png" width="424" height="557" class="w-full" alt="">
+                        <div class=" p-12 py-6 shadow-[0px_4px_60px_#00000014]"
+                            style="background: linear-gradient(0deg, rgba(16,16,16,1) 14%, rgba(67,67,67,0.6) 50%, rgba(16,16,16,1) 70%);">
+                            <div class=" " style="aspect-ratio:0.8; overflow: hidden; ">
+                                <img src="images/collection-1.png"
+                                    style="border-radius: 12px; overflow: hidden; height: 100%;" width="424"
+                                    height="557" class="w-full" alt="">
                             </div>
-                            <div class="space-y-3 px-8 py-6 md:px-4">
+                            <div class="space-y-3  py-6 md:px-4">
                                 <div class="space-y-1 text-white">
                                     <p class="text-base font-light text-white">Text</p>
                                     <p class="text-xl font-semibold leading-[1.6] ">Name</p>
@@ -191,11 +243,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-[#FFFFFF01] shadow-[0px_4px_60px_#00000014]">
-                            <div class="bg-primary" style="aspect-ratio:0.8; overflow: hidden;">
-                                <img src="images/collection-2.png" width="424" height="557" class="w-full" alt="">
+                        <div class=" p-12 py-6 shadow-[0px_4px_60px_#00000014]"
+                            style="background: linear-gradient(0deg, rgba(16,16,16,1) 14%, rgba(67,67,67,0.6) 50%, rgba(16,16,16,1) 70%);">
+                            <div class=" " style="aspect-ratio:0.8; overflow: hidden; ">
+                                <img src="images/collection-2.png" style="border-radius: 12px; overflow: hidden;"
+                                    width="424" height="557" class="w-full" alt="">
                             </div>
-                            <div class="space-y-3 px-8 py-6 md:px-4">
+                            <div class="space-y-3  py-6 md:px-4">
                                 <div class="space-y-1 text-white">
                                     <p class="text-base font-light text-white">Text</p>
                                     <p class="text-xl font-semibold leading-[1.6]">Name</p>
@@ -210,16 +264,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid grid-cols-3 sm:grid-cols-1">
-                        <div class="sm:hidden"></div><button class="btn-primary">Buy On Opensea</button>
+                    <div class="flex justify-center gap-4  mt-16 mb-16">
+                        <button class="px-3 py-3 h-12 max-w-md w-full"
+                            style="border-radius: 10px; background: #AEAEB6; color: #060622;">Buy On Opensea</button>
                     </div>
                 </div>
             </div>
-            <div class="mx-auto flex w-full justify-center items-center gap-[18px]  md:pb-8" style="background: #060622; padding-top: 80px; padding-bottom: 50px;">
+            <div class="mx-auto flex w-full justify-center items-center gap-[18px]  md:pb-8"
+                style="background: #060622; padding-top: 150px; padding-bottom: 50px;">
                 <p class="text-[22px] font-light " style="color: #fff;">Powered by</p>
                 <div class="flex items-center gap-1.5"><img alt="M4Logo" loading="lazy" width="50" height="50"
-                        decoding="async" data-nimg="1" style="color:transparent"
-                        srcSet="images/m4.png"
+                        decoding="async" data-nimg="1" style="color:transparent" srcSet="images/m4.png"
                         src="images/m4.png" />
                     <p class="text-[22px] font-medium" style="color: #08AD08;">Mint4Change</p>
                 </div>
@@ -242,8 +297,7 @@
                             class="w-fit whitespace-nowrap text-[0.8rem] font-bold text-white" target="_blank"
                             href="accessibility-statement.html">ACCESSIBILITY STATEMENT</a></ul><img alt="Logo"
                         loading="lazy" width="236" height="47" decoding="async" data-nimg="1" style="color:transparent"
-                        srcSet="images/logo.png"
-                        src="images/logo.png" />
+                        srcSet="images/logo.png" src="images/logo.png" />
                 </div>
                 <div class="flex items-end justify-between sm:flex-col sm:items-start">
                     <div class="invisible sm:hidden">
@@ -254,13 +308,17 @@
                     </div>
                     <ul class="flex gap-2 sm:gap-1.5">
                         <li><a class="flex h-10 w-10 items-center justify-center rounded-full bg-primary sm:h-[26px] sm:w-[26px]"
-                                target="_blank" href="https://instagram.com/"><span><i class="text-white fab fa-instagram"></i> </span></a></li>
+                                target="_blank" href="https://instagram.com/"><span><i
+                                        class="text-white fab fa-instagram"></i> </span></a></li>
                         <li><a class="flex h-10 w-10 items-center justify-center rounded-full bg-primary sm:h-[26px] sm:w-[26px]"
-                                target="_blank" href="https://facebook.com/"><span><i class="text-white fab fa-facebook-f"></i></span></a></li>
+                                target="_blank" href="https://facebook.com/"><span><i
+                                        class="text-white fab fa-facebook-f"></i></span></a></li>
                         <li><a class="flex h-10 w-10 items-center justify-center rounded-full bg-primary sm:h-[26px] sm:w-[26px]"
-                                target="_blank" href="https://tiktok.com/"><span><i class="text-white fab fa-tiktok"></i></span></a></li>
+                                target="_blank" href="https://tiktok.com/"><span><i
+                                        class="text-white fab fa-tiktok"></i></span></a></li>
                         <li><a class="flex h-10 w-10 items-center justify-center rounded-full bg-primary sm:h-[26px] sm:w-[26px]"
-                                target="_blank" href="https://youtube.com/"><span><i class="text-white fab fa-youtube"></i></span></a></li>
+                                target="_blank" href="https://youtube.com/"><span><i
+                                        class="text-white fab fa-youtube"></i></span></a></li>
                     </ul>
                     <div class="sm:pl-4 sm:pt-4">
                         <p class="text-right text-[12.8px] font-bold text-white sm:text-left">PAID FOR BY TEAM KENNEDY
